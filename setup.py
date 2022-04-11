@@ -2,7 +2,7 @@
 # -*- encoding: utf-8 -*-
 """
 setup.py
-A module that installs projectname as a module
+A module that installs pj-uorg as a module
 """
 from glob import glob
 from os.path import basename, splitext
@@ -10,13 +10,13 @@ from os.path import basename, splitext
 from setuptools import find_packages, setup
 
 setup(
-    name='projectname',
+    name='pj-uorg',
     version='1.0.0',
     license='MIT',
-    description='Project description.',
-    author='UGRC',
-    author_email='ugrc@utah.gov',
-    url='https://github.com/agrc/python',
+    description='Updates for the UORG Outdoor Recreation Grant.',
+    author='Jacob Adams',
+    author_email='jdadams@utah.gov',
+    url='https://github.com/agrc/pj-uorg',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
@@ -46,12 +46,13 @@ setup(
             'pytest-watch~=4.2',
             'pytest~=6.0',
             'yapf~=0.31',
+            'pytest-mock~=3.7',
         ]
     },
     setup_requires=[
         'pytest-runner',
     ],
     entry_points={'console_scripts': [
-        'projectname = projectname.main:main',
+        'pj-uorg = uorg.main:main',
     ]},
 )
