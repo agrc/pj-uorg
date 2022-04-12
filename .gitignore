@@ -1,5 +1,9 @@
 sheets-sa.json
 
+# These might have live data in them
+testing.ipynb
+testing-checkpoint.ipynb
+
 *.py[cod]
 
 # Packages
