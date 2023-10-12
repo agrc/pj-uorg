@@ -1,6 +1,6 @@
 # UGRC Python Starter Tempalate
 
-![Build Status](https://github.com/agrc/python/workflows/Build%20and%20Test/badge.svg)
+[![Push Events](https://github.com/agrc/pj-uorg/actions/workflows/push.yml/badge.svg)](https://github.com/agrc/pj-uorg/actions/workflows/push.yml)
 [![codecov](https://codecov.io/gh/agrc/python/branch/main/graph/badge.svg)](https://codecov.io/gh/agrc/python)
 
 UGRC's default Python project configuration/template
